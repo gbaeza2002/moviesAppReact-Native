@@ -12,9 +12,9 @@ const Stack = createStackNavigator<RootStackParams>();
 export const Navigation = () => {
     return (
         <Stack.Navigator screenOptions={{
-            headerShown: true
+            headerShown: false
         }}>
-            <Stack.Screen name="Home" component={HomeScreen} />
+            <Stack.Screen options={{title:'Inicio'}} name="Home" component={HomeScreen} />
             <Stack.Screen name="Details" component={DetailsScreen} />
         </Stack.Navigator>
     );
